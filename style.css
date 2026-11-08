@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #111827;
+  color: #f3f4f6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header, nav, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+}
+
+h1, h2 {
+  color: #facc15;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+a {
+  color: #facc15;
+}
+
+.botao {
+  margin-left: auto;
+  padding: 6px 12px;
+  border: 1px solid #facc15;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: #facc15;
+  color: #111827;
+}
+
+.bloco {
+  margin: 18px 0;
+  padding: 15px;
+  background-color: #263449;
+  border: 1px solid #64748b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.bloco:hover {
+  background-color: #34465e;
+  transform: translateY(-3px);
+}
+
+.bloco h3 {
+  margin-top: 0;
+  color: #facc15;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  left: 15px;
+}
+
+.area-absolute {
+  position: relative;
+  height: 190px;
+  margin: 18px 0;
+  border: 1px dashed #64748b;
+}
+
+.absolute {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  margin: 0;
+}
+
+.area-sticky {
+  height: 220px;
+  margin: 18px 0;
+  border: 1px dashed #64748b;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.fixed {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.personagem {
+  min-height: 95px;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 15px 0;
+  border-top: 1px solid #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 12px;
+  }
+
+  .relative {
+    left: 6px;
+  }
+
+  .botao {
+    margin-left: 0;
+  }
+}
